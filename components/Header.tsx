@@ -119,10 +119,12 @@ export default function Header() {
             {/* Prominent High-Contrast Solid "Request a Quote" Button */}
             <button
               onClick={() => openRfq()}
-              className="inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 bg-copper-600 hover:bg-copper-500 text-white font-heading font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl shadow-copper-glow border border-copper-400/80 transition-all transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer shrink-0"
+              className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-5 py-2 sm:py-3 bg-copper-600 hover:bg-copper-500 text-white font-heading font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl shadow-copper-glow border border-copper-400/80 transition-all transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer shrink-0"
             >
-              <Calculator className="w-4 h-4 text-white shrink-0" />
-              <span className="whitespace-nowrap">Request a Quote</span>
+              <Calculator className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white shrink-0" />
+              <span className="whitespace-nowrap">
+                <span className="hidden sm:inline">Request a </span>Quote
+              </span>
             </button>
 
             {/* Unique Metallic Geometric Control for Hamburger */}

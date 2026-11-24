@@ -32,7 +32,7 @@ export default function QualityPage() {
         {/* Full-bleed Industrial Photographic Background */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=2000&q=85"
+            src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=2000&q=85"
             alt="MERIDIAN Metrology Laboratory & Zeiss 3D CMM Testing Facility"
             fill
             className="object-cover object-center"

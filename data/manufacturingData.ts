@@ -146,7 +146,7 @@ export const productsData: Product[] = [
     moq: '500 Units (Flat-Packed on Pallets)',
     leadTime: '5–7 Business Days',
     packagingUnit: 'Shrink-Wrapped Bundles of 25 Units',
-    image: 'https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=1200&q=85',
+    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=85',
     compliance: ['FSC Certified Woodfiber', 'RoHS / REACH Compliant', 'ISTA 3A Drop Tested']
   },
   {

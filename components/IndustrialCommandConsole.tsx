@@ -84,18 +84,20 @@ export default function IndustrialCommandConsole() {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 lg:p-10 bg-graphite-950/85 backdrop-blur-md overflow-y-auto">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-6 lg:p-10 bg-graphite-950/85 backdrop-blur-md overflow-y-auto">
       {/* Mechanical Floating Command Console */}
       <div 
         ref={consoleRef}
-        className="relative w-full max-w-6xl my-auto bg-graphite-900 border-2 border-industrial-600/70 rounded-2xl shadow-industrial-console overflow-hidden animate-console-unfold flex flex-col max-h-[92vh]"
+        className="relative w-full max-w-[calc(100vw-16px)] sm:max-w-6xl my-auto bg-graphite-900 border-2 border-industrial-600/70 rounded-2xl shadow-industrial-console overflow-hidden animate-console-unfold flex flex-col max-h-[92vh]"
       >
         {/* Top Control Bar / Telemetric Header */}
-        <div className="flex items-center justify-between px-5 sm:px-8 py-3.5 bg-graphite-950 border-b border-industrial-700/80 text-industrial-300 font-mono text-xs select-none shrink-0">
-          <div className="flex items-center gap-3">
-            <span className="flex items-center gap-2 text-copper-400 font-bold uppercase tracking-widest text-[11px] sm:text-xs">
-              <span className="w-2 h-2 rounded-full bg-copper-500 animate-pulse" />
-              <span>MERIDIAN INDUSTRIAL COMMAND CONSOLE</span>
+        <div className="flex items-center justify-between px-3 sm:px-8 py-3 bg-graphite-950 border-b border-industrial-700/80 text-industrial-300 font-mono text-xs select-none shrink-0 min-w-0">
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+            <span className="flex items-center gap-1.5 sm:gap-2 text-copper-400 font-bold uppercase tracking-wider text-[10px] sm:text-xs min-w-0">
+              <span className="w-2 h-2 rounded-full bg-copper-500 animate-pulse shrink-0" />
+              <span className="truncate">
+                <span className="hidden sm:inline">MERIDIAN </span>COMMAND CONSOLE
+              </span>
             </span>
             <span className="hidden md:inline-block text-industrial-600">|</span>
             <span className="hidden md:inline-block text-industrial-400 text-[11px]">
@@ -103,13 +105,13 @@ export default function IndustrialCommandConsole() {
             </span>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-4 shrink-0">
             <span className="hidden sm:inline-block text-industrial-400 text-[11px]">
               PRESS <kbd className="px-1.5 py-0.5 rounded bg-industrial-800 text-industrial-200 border border-industrial-700">ESC</kbd> TO CLOSE
             </span>
             <button
               onClick={closeConsole}
-              className="p-1.5 rounded-lg bg-industrial-800/80 hover:bg-copper-600 text-industrial-300 hover:text-white border border-industrial-700 transition-colors cursor-pointer"
+              className="p-1.5 rounded-lg bg-industrial-800/80 hover:bg-copper-600 text-industrial-300 hover:text-white border border-industrial-700 transition-colors cursor-pointer shrink-0"
               aria-label="Close Industrial Command Console"
             >
               <X className="w-4 h-4" />
