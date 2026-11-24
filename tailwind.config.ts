@@ -1,0 +1,113 @@
+import type { Config } from 'tailwindcss';
+
+const config: Config = {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './data/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        industrial: {
+          50: '#F8FAFC',
+          100: '#F1F5F9',
+          200: '#E2E8F0',
+          300: '#CBD5E1',
+          400: '#94A3B8',
+          500: '#64748B',
+          600: '#475569',
+          700: '#334155',
+          800: '#1E293B',
+          900: '#0F172A',
+          950: '#0B1220',
+          DEFAULT: '#334155',
+        },
+        graphite: {
+          50: '#F4F5F7',
+          100: '#E5E7EB',
+          200: '#D1D5DB',
+          300: '#9CA3AF',
+          400: '#6B7280',
+          500: '#4B5563',
+          600: '#374151',
+          700: '#1F2937',
+          800: '#161C24',
+          900: '#11151A',
+          950: '#0A0D11',
+          DEFAULT: '#161C24',
+        },
+        steel: {
+          50: '#F0F5FA',
+          100: '#E1EBF5',
+          200: '#C3D7EB',
+          300: '#95B8DC',
+          400: '#5F93CA',
+          500: '#3C73B5',
+          600: '#2A5898',
+          700: '#21447B',
+          800: '#1C3864',
+          900: '#1A3052',
+          950: '#101D33',
+          DEFAULT: '#2A5898',
+        },
+        copper: {
+          50: '#FFF7ED',
+          100: '#FFEDD5',
+          200: '#FED7AA',
+          300: '#FDBA74',
+          400: '#FB923C',
+          500: '#F97316',
+          600: '#EA580C',
+          700: '#C2410C',
+          800: '#9A3412',
+          900: '#7C2D12',
+          DEFAULT: '#EA580C',
+        },
+        amber: {
+          50: '#FFFBEB',
+          100: '#FEF3C7',
+          200: '#FDE68A',
+          300: '#FCD34D',
+          400: '#FBBF24',
+          500: '#F59E0B',
+          600: '#D97706',
+          700: '#B45309',
+          800: '#92400E',
+          900: '#78350F',
+          DEFAULT: '#F59E0B',
+        },
+      },
+      fontFamily: {
+        heading: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        mono: ['JetBrains Mono', 'Consolas', 'Courier New', 'monospace'],
+      },
+      boxShadow: {
+        'industrial-subtle': '0 2px 10px rgba(0, 0, 0, 0.08)',
+        'industrial-card': '0 4px 20px rgba(15, 23, 42, 0.12)',
+        'industrial-console': '0 25px 60px -15px rgba(10, 13, 17, 0.75), 0 0 0 1px rgba(148, 163, 184, 0.15)',
+        'copper-glow': '0 0 25px rgba(234, 88, 12, 0.35)',
+        'steel-glow': '0 0 25px rgba(42, 88, 152, 0.35)',
+      },
+      keyframes: {
+        consoleUnfold: {
+          '0%': { opacity: '0', transform: 'scale(0.96) translateY(-10px)' },
+          '100%': { opacity: '1', transform: 'scale(1) translateY(0)' },
+        },
+        telemetricPulse: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.4' },
+        },
+      },
+      animation: {
+        'console-unfold': 'consoleUnfold 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+        'telemetric-pulse': 'telemetricPulse 2s ease-in-out infinite',
+      },
+    },
+  },
+  plugins: [],
+};
+
+export default config;
